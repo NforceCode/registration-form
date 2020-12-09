@@ -13,14 +13,14 @@
       
       <h1 class="centered header">Register</h1>
       <p class="centered">Create your account. It's free and only takes a minute.</p>
-      <form class="registration-box">
+      <form class="registration-box" method="POST">
         <input class="small-size text-field" type="text" name="firstname" placeholder="First Name" autocomplete="name" autofocus required>
         <input class="small-size text-field" type="text" name="lastname" placeholder="Last Name" autocomplete="family-name" required>
         <input class="full-size text-field" type="email" name="firstname" placeholder="Email" autocomplete="email" required>
         <input class="full-size text-field" type="password" name="password" placeholder="Password" required>
         <input class="full-size text-field" type="password" name="password-confirm" placeholder="Confirm Password" required>
         <label class="full-size">
-          <input type="checkbox" name="terms">
+          <input type="checkbox" name="terms" required>
            I accept the <a href="#" class="link">Terms of Use</a> and <a href="#" class="link">Privacy policy</a>.
         </label>
         <button class="full-size text-field submit-btn" type="submit">Register now</button>

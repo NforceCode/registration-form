@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --container-size: 400px;
+  --wrapper-padding: 20px;
+  --submit-btn-color: white;
+  --submit-btn-bg: linear-gradient(0deg, rgba(94,150,56,1) 0%, rgb(126, 184, 90) 100%);
+  --card-bg: #bbbbbb;
+}
+
+.wrapper {
+  margin: 30px auto;
+  background-color: var(--card-bg);
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-content: space-around;
+  max-width: calc(var(--container-size) + 2* var(--wrapper-padding));
+  padding: var(--wrapper-padding);
+}
+
+.centered {
+  text-align: center;
+}
+
+.header {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.registration-box {
+  display:flex;
+  flex-flow: row wrap;
+  max-width: var(--container-size);
+}
+
+.small-size,
+.full-size {
+  margin-top: 10px;
+}
+
+.text-field {
+  padding: 5px 10px;
+}
+
+.small-size {
+  flex: 0.5;
+  max-width: 45%;
+}
+
+.small-size + .small-size {
+  margin-left: 10%;
+}
+
+.full-size {
+  flex: 1 var(--container-size);
+}
+
+.link {
+  text-decoration: none;
+  color: green;
+}
+
+.submit-btn {
+  color: var(--submit-btn-color);
+  background: var(--submit-btn-bg);
+  border: none;
+  border-radius: 5px;
+}

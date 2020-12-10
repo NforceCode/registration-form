@@ -12,11 +12,33 @@
     <section class="wrapper">
       
       <h1 class="centered header">Register</h1>
-      <p class="centered">Create your account. It's free and only takes a minute.</p>
+      <p class="centered info-paragraph">Create your account. It's free and only takes a minute.</p>
       <form action="#" class="registration-box" method="GET">
         <input class="small-size text-field" type="text" name="firstname" placeholder="First Name" autocomplete="name" autofocus required>
         <input class="small-size text-field" type="text" name="lastname" placeholder="Last Name" autocomplete="family-name" required>
         <input class="full-size text-field" type="email" name="firstname" placeholder="Email" autocomplete="email" required>
+
+        <div class="full-size">
+          <p class="info-paragraph">Choose your plan:</p>
+          <label class="text-field inline-block">
+            <input type="radio" name="tariff" >Trial
+          </label>
+          <label class="text-field inline-block">
+            <input type="radio" name="tariff" >Basic
+          </label>
+          <label class="text-field inline-block">
+            <input type="radio" name="tariff" >Advanced
+          </label>
+          <label class="text-field inline-block">
+            <input type="radio" name="tariff" >Premium
+          </label>
+        </div>
+
+        <!-- <select class="full-size text-field" name="city">
+          <option value="Kyiv">Kyiv</option>
+        </select> -->
+        
+
         <input class="full-size text-field" type="password" name="password" placeholder="Password" required>
         <input class="full-size text-field" type="password" name="password-confirm" placeholder="Confirm Password" required>
         <label class="full-size">

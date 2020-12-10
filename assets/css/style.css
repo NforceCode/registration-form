@@ -40,8 +40,9 @@
 }
 
 .small-size,
-.full-size {
-  margin-top: 10px;
+.full-size,
+.info-paragraph {
+  margin-bottom: 10px;
 }
 
 .text-field {
@@ -59,6 +60,10 @@
 
 .full-size {
   flex: 1 var(--container-size);
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .link {

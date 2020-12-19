@@ -37,6 +37,10 @@
 .header-text {
   display: inline-block;
   vertical-align: middle;
+  max-width: 50%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 .header::before,
 .header::after {
